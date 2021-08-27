@@ -1,0 +1,643 @@
+@font-face {
+  font-family: DINPro-Black;
+  src: url("../fonts/DINPro-Black.otf");
+}
+@font-face {
+  font-family: DINPro-Bold;
+  src: url("../fonts/DINPro-Bold.otf");
+}
+@font-face {
+  font-family: DINPro-Light;
+  src: url("../fonts/DINPro-Light.otf");
+}
+@font-face {
+  font-family: DINPro-Medium;
+  src: url("../fonts/DINPro-Medium.otf");
+}
+@font-face {
+  font-family: DINPro-Regular;
+  src: url("../fonts/DINPro-Regular.otf");
+}
+body {
+  font-size: 14px;
+  font-family: DINPro-Regular;
+  font-weight: normal;
+}
+.fondo {
+  float: left;
+  width: 100%;
+}
+.fondo .contenedor {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  clear: both;
+}
+.fondo .fondoVideo .header {
+  float: left;
+  width: 100%;
+  /* background-image: url(../img/fondoHeader2.png); */
+  /* background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  overflow: hidden;
+  /* position: relative; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 150px 70px 50px;
+}
+.fondo .fondoVideo {
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.fondo .fondoVideo iframe {
+  float: left;
+  width: 100%;
+  min-height: 100vh;
+}
+.fondo .header .base {
+  float: left;
+  width: 50%;
+  min-width: 300px;
+  height: 55vh;
+  /* overflow: hidden; */
+  /* transform: translateY(100px); */
+}
+@keyframes animation {
+  0% {
+  }
+  100% {
+  }
+}
+.fondo .header .base .doblebase2 {
+  border-left: 1px dashed #fff;
+  width: 100%;
+  height: 100%;
+  transition: 1s all ease-in-out;
+  transform: translateY(15vh);
+}
+.fondo .header .base .doblebase {
+  border-left: 1px dashed #fff;
+  width: 100%;
+  height: 100%;
+  transform: translateY(55vh);
+  transition: 1s all ease-in-out;
+}
+.fondo .header .base .doblebase2 .des {
+  margin-bottom: 0px;
+}
+.fondo .header .base .doblebase .des {
+  margin-bottom: 100px;
+}
+.fondo .header .base .doblebase2 .subbase {
+  float: left;
+  width: 100%;
+  transition: 1s all ease-in-out;
+  padding-left: 50px;
+  position: relative;
+}
+.fondo .header .base .doblebase .subbase {
+  float: left;
+  width: 100%;
+  transition: 1s all ease-in-out;
+  padding-left: 50px;
+  position: relative;
+  transform: translateY(-30px);
+  /* margin-bottom: 10px; */
+}
+.fondo .header .base .subbase h3 {
+  float: left;
+  width: 100%;
+  line-height: 0px;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 16px;
+  color: white;
+  font-family: DINPro-Bold;
+}
+.fondo .header .base .subbase p {
+  float: left;
+  width: 80%;
+  line-height: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+  font-size: 14px;
+  font-family: DINPro-Regular;
+}
+.fondo .header .base .subbase .redondo {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translateX(-50%);
+}
+.fondo .header .base .subbase .redondo .redondeado {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transform: translate(-5px, -5px);
+  display: none;
+}
+.fondo .header .base .subbase:hover .redondeado {
+  display: block;
+}
+.fondo .header .titulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8%;
+}
+.fondo .header .explore span {
+  color: white;
+}
+.fondo .header .titulo .subtitulo {
+  border-left: 6px solid #e42313;
+  line-height: 33px;
+  float: left;
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+.fondo .header .titulo .subtitulo strong {
+  margin-top: 18px;
+  float: left;
+  width: 100%;
+}
+.fondo .buttonFixed {
+  position: absolute;
+  bottom: 5%;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.fondo .section1 {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fondo .section1 .mitad1 img {
+  height: 100vh;
+  z-index: 3;
+}
+.fondo .section1 .mitad2 {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 70px;
+  overflow: hidden;
+}
+.fondo .section1 .mitad2 .fondoImagen {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100vh;
+  z-index: 1;
+}
+
+.fondo .section1 .mitad2 .content {
+  width: 100%;
+  max-width: 500px;
+  z-index: 2;
+}
+.fondo .section1 .mitad2 .titulo {
+  font-size: 24px;
+  font-family: DINPro-Bold;
+  font-weight: 600;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fondo .section1 .mitad2 p {
+  font-family: DINPro-Regular;
+  font-size: 14px;
+  color: black;
+}
+.fondo .section2 {
+  float: left;
+  width: 100%;
+  background-image: url(../img/section2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 50px;
+}
+.fondo .section2 .carrusel {
+  width: 75%;
+}
+.fondo .section2 .carrusel iframe {
+  height: 70vh;
+}
+.fondo .section2 .titulaso {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+.fondo .section2 .titulaso .titulo {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #e42313;
+}
+.fondo .section2 .titulaso .titulo span {
+  color: white;
+}
+.fondo .section2 .titulaso .botones {
+  float: left;
+  width: 100%;
+}
+
+.fondo .section2 .titulaso .botones button {
+  background: transparent;
+  float: left;
+  width: 100px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: DINPro-Regular;
+  outline: transparent !important;
+  transition: 0.7s all ease-in-out;
+}
+
+.fondo .section2 .titulaso .botones button:focus {
+  border: none;
+}
+.fondo .section2 .titulaso .botones button img {
+  margin-right: 10px;
+}
+.fondo .section2 .titulaso .botones button svg {
+  margin-right: 10px;
+}
+.fondo .section2 .titulaso .botones .btn1 {
+  margin-left: 20px;
+  /* opacity: 0; */
+}
+.fondo .section2 .titulaso .botones .btn2 {
+  margin-left: 20px;
+  opacity: 0;
+}
+.fondo .section2 .titulaso .botones .btn3 {
+  margin-left: 20px;
+  width: 120px;
+  opacity: 0;
+}
+.fondo .section2 .titulaso h1 {
+  color: #fff;
+  float: left;
+  width: 100%;
+  font-size: 62px;
+}
+.fondo .section2 .titulaso .h11 {
+  color: #fff;
+  margin-bottom: 0px;
+  font-family: DINPro-bold;
+}
+.fondo .section2 .titulaso .h12 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: DINPro-Regular;
+}
+.fondo .section3 {
+  /* min-height: 100vh; */
+  float: left;
+  width: 100%;
+  background-image: url(../img/section3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+.fondo .section3 .base {
+  float: left;
+  width: 50%;
+  min-width: 300px;
+  /*border-left: 1px dashed #fff;*/
+  height: 75vh;
+  /* transform: translateY(100px); */
+}
+.fondo .section3 .base .doblebase {
+    border-left: 1px dashed #fff;
+    width: 100%;
+    height: 100%;
+    transform: translateY(55vh);
+    transition: 1s all ease-in-out;
+}
+.fondo .section3 .base .doblebase2 {
+    border-left: 1px dashed #fff;
+    width: 100%;
+    height: 100%;
+    transition: 1s all ease-in-out;
+    transform: translateY(12vh);
+}
+.fondo .section3 .base .subbase {
+  float: left;
+  width: 100%;
+  padding-left: 50px;
+  position: relative;
+}
+.fondo .section3 .base .subbase h3 {
+  float: left;
+  width: 100%;
+  line-height: 0px;
+  margin-bottom: 70px;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-family: DINPro-Bold;
+}
+.fondo .section3 .base .subbase p {
+  float: left;
+  width: 80%;
+  line-height: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  color: white;
+  font-size: 14px;
+  font-family: DINPro-Regular;
+}
+.fondo .section3 .base .subbase .redondo {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translateX(-50%);
+}
+.fondo .section3 .base .subbase .redondo .redondeado {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transform: translate(-10px, -10px);
+  display: none;
+}
+.fondo .section3 .base .subbase:hover .redondeado {
+  display: block;
+}
+.fondo .section3 .beneficios {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: white;
+  font-weight: bold;
+}
+.fondo .section3 .beneficios2 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  color: white;
+  font-weight: bold;
+}
+._89n_ {
+  background: #e42313 !important;
+}
+.carousel-indicators li {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+.carousel-control-next-icon {
+  display: none;
+}
+.carousel-control-prev {
+  display: none;
+}
+.carousel-indicators {
+  bottom: -50px;
+  left: 85% !important;
+  margin: 0px;
+}
+.movil {
+  display: none;
+}
+.fondo .section4 {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.fondo .section4 .blanco {
+  float: left;
+  width: 100%;
+  height: 40vh;
+}
+.fondo .section4 .camion {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+.fondo .section4 .ruedaAdelante {
+  position: absolute;
+  top: 228px;
+  left: calc(50% + 84px);
+}
+.fondo .section4 .ruedaAtras {
+  position: absolute;
+  top: 228px;
+  left: calc(50% - 220px);
+}
+.animationCamion {
+  animation: animation 3s ease-in-out;
+}
+.animationRuedas {
+  animation: rotacion 3s ease-in-out;
+}
+@keyframes animation {
+  0% {
+    left: -30%;
+    top: 0px;
+  }
+  100% {
+    left: 50%;
+    top: 0px;
+  }
+}
+.desktop {
+  display: block;
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+  }
+}
+.fondo .section4 .gris {
+  float: left;
+  width: 100%;
+  height: 20vh;
+  background: #1e1e1e;
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .fondo .section1 {
+    flex-direction: column;
+  }
+  .fondo .section1 .mitad2 {
+    position: relative;
+    padding: 50px 50px;
+    overflow: hidden;
+  }
+  .fondo .section1 .mitad2 img {
+    height: auto;
+    width: 90%;
+  }
+  .fondo .section1 .mitad1 img {
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+  .fondo .header {
+    padding: 50px 20px 50px 50px;
+  }
+  .desktop {
+    display: none;
+  }
+  .movil {
+    display: block;
+  }
+  .fondo .buttonFixed {
+    right: 20px;
+    bottom: 20px;
+  }
+  .fondo .header .titulo {
+    bottom: 20px;
+    left: 50px;
+    transform: translateY(0px);
+    width: 80%;
+  }
+  .fondo .section2 .carrusel {
+    width: 100%;
+  }
+
+  .fondo .section2 {
+    padding: 50px 20px 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .carousel-indicators {
+    bottom: -20px !important;
+    left: 90% !important;
+  }
+  .fondo .section2 .titulaso {
+    left: 0px;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0px;
+  }
+  .fondo .section3 {
+    padding: 100px 50px;
+    height: auto;
+  }
+  .fondo .section3 .base {
+    height: auto;
+  }
+  .fondo .section3 .beneficios {
+    top: 20px;
+    left: 20px;
+  }
+  .fondo .section3 .beneficios2 {
+    left: 20px;
+    bottom: 20px;
+  }
+  @keyframes animation2 {
+    0% {
+      left: -50%;
+      top: 0px;
+    }
+    100% {
+      left: 10%;
+      top: 0px;
+    }
+  }
+  .animationCamion {
+    animation: animation2 6s ease-in-out;
+  }
+  .fondo .section4 .camion {
+    left: 10%;
+    width: 320px;
+  }
+  .fondo .section4 .camion .img {
+    width: 320px;
+  }
+  .fondo .section4 .ruedaAtras {
+    position: absolute;
+    top: 145px;
+    left: calc(50% - 143px);
+    width: 58px;
+  }
+  .fondo .section4 .ruedaAdelante {
+    position: absolute;
+    top: 148px;
+    left: calc(50% + 53px);
+    width: 58px;
+  }
+  .fondo .section4 .blanco {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  @keyframes animation3 {
+    0% {
+      left: -50%;
+      top: 0px;
+    }
+    100% {
+      left: 1%;
+      top: 0px;
+    }
+  }
+  .fondo .section4 .camion {
+    left: 1%;
+    width: 320px;
+  }
+  .animationCamion {
+    animation: animation3 6s ease-in-out;
+  }
+}
